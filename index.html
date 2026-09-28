@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengumuman Staff BCF 2027</title>
+    <!-- Menggunakan Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        background-color: #f8fafc;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.85);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.4);
+      }
+      .fade-in {
+        animation: fadeIn 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        opacity: 0;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <body class="text-slate-800 antialiased selection:bg-blue-200">
+    <!-- Header / Hero Section -->
+    <header
+      class="relative bg-gradient-to-br from-blue-800 to-indigo-900 text-white pt-24 pb-32 px-6 text-center shadow-xl overflow-hidden"
+    >
+      <!-- Elemen Dekoratif -->
+      <div
+        class="absolute inset-0 overflow-hidden z-0 pointer-events-none opacity-30"
+      >
+        <div
+          class="absolute -top-24 -left-24 w-96 h-96 rounded-full bg-blue-500 blur-3xl"
+        ></div>
+        <div
+          class="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-indigo-400 blur-3xl"
+        ></div>
+      </div>
+
+      <div class="relative z-10 max-w-3xl mx-auto fade-in">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4 tracking-tight">
+          Pengumuman Staff BCF 2027
+        </h1>
+        <p class="text-lg md:text-xl text-blue-100 font-light">
+          Selamat kepada kandidat yang terpilih. Mari berkolaborasi dan wujudkan
+          inovasi bersama!
+        </p>
+      </div>
+    </header>
+
+    <!-- Konten Utama -->
+    <main class="max-w-4xl mx-auto px-5 -mt-20 relative z-20 pb-16">
+      <!-- Kartu Sambutan (Ganti Teks Canva di sini) -->
+      <section
+        class="glass-card rounded-2xl p-6 md:p-8 shadow-lg mb-8 fade-in"
+        style="animation-delay: 0.1s"
+      >
+        <h2
+          class="text-2xl font-bold text-slate-800 mb-4 border-b pb-3 border-slate-200"
+        >
+          Halo, Calon Staff!
+        </h2>
+        <div class="text-slate-600 leading-relaxed space-y-4">
+          <!-- PASTE TEKS SAMBUTAN DARI CANVA DI SINI -->
+          <p>
+            Terima kasih atas partisipasi teman-teman dalam rangkaian rekrutmen
+            Staff BCF 2027. Setelah melalui proses seleksi yang kompetitif, kami
+            bangga mengumumkan nama-nama yang berhasil lolos.
+          </p>
+          <p>
+            Bagi yang belum berkesempatan bergabung, jangan patah semangat.
+            Teruslah berkarya karena masih banyak jalan lain untuk mengembangkan
+            potensi diri.
+          </p>
+        </div>
+      </section>
+
+      <!-- Fitur Pencarian Cepat -->
+      <div class="mb-6 fade-in" style="animation-delay: 0.2s">
+        <div class="relative">
+          <i
+            class="fa-solid fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-slate-400"
+          ></i>
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari namamu atau divisi di sini..."
+            class="w-full pl-12 pr-4 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all shadow-sm text-slate-700 bg-white"
+          />
+        </div>
+      </div>
+
+      <!-- Daftar Pengumuman -->
+      <section
+        id="announcementList"
+        class="space-y-4 fade-in"
+        style="animation-delay: 0.3s"
+      >
+        <!-- Contoh Divisi 1 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-laptop-code text-blue-600 mr-2 w-6"></i
+              >Sekretaris
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <!-- PASTE NAMA-NAMA DARI CANVA DI SINI -->
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Dimas Yusuf Darmawan</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Cahya Dwi Aryani</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Nadya Fadhila Ramadhani</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi 2 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i
+              >Bendahara
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Salsa Nabila Kusuma</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Syafa Dwi Azzahra</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Putri Olfiia Gusmi</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi 3 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i>Acara
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Tabita Najwa Kharismadewi</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Muhammad Basyar Ubaidillah Arfad</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >A'isy Syafiq Wening Zukruf Al Waliy</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Putri Khumaira</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Mauzayanatur Ramadhani</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Syara Ajeng Wijaya</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Tsaqif Ahmad Triyatnantyo</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi 4 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i>Humas
+              dan Perizinan
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Dwi Ayu Senastuti</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Erli Yusi Julianita</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Keisha Izmi Olia</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Ninda Resti Ningsih</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Erlita Kartika</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi Lima -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i>Media
+              dan Branding
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Agnintia Tri Maharani</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Vika Kurnia Utami</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Mumtaz Oktavida Hanafi</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Rafka Tri Maulanna</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Abdillah Rahmat Subekti</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Benedikta Chandra Ekaristi</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi Enam -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i
+              >Konsumsi
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Kharissa Salsabila</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Rachma Eldryana Hamzah</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Sainshe A Zam Wa</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Anggita Trisna Nur Rohmah</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Nabihah Yatnaning Jati</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi 7 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i
+              >Keamanan
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Dino Pratama Junior</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Fawwaz zaim</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Naufal Aqila Faza</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Nadav Ayyonif</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Cherly Tria Pratiwi</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Indira Nur Azzahra</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi 8 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i
+              >TryOut
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Gadiza Dian Syafrina</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Feni Tri Cahyani</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Alfia Maharani</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Aura Anabela F</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Lu'lui Zulfa Muniroh</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi 9 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i
+              >Sponsorship
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Galang Aditya Wibowo</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Amalia Pradipta R</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Isnaeni Choeri Wicaksana</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Orizhah Zhatyfah</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Kirana Alodiavita</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Okfita Nazwa Andini</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Laela Dwi Nur Rizka</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contoh Divisi 10 -->
+        <div
+          class="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden department-card transition-all"
+        >
+          <div
+            class="bg-slate-50 hover:bg-slate-100 px-6 py-4 flex justify-between items-center cursor-pointer toggle-btn transition-colors"
+          >
+            <h3 class="text-lg font-semibold text-slate-700 department-name">
+              <i class="fa-solid fa-bullhorn text-indigo-600 mr-2 w-6"></i
+              >Perlengkapan dan Dekorasi
+            </h3>
+            <i
+              class="fa-solid fa-chevron-down text-slate-400 transition-transform duration-300"
+            ></i>
+          </div>
+          <!-- Daftar Nama -->
+          <div
+            class="px-6 py-5 transition-all duration-300 border-t border-slate-100 content-area"
+          >
+            <ul class="space-y-3 grid grid-cols-1 md:grid-cols-2 gap-2">
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Asri Nafsiah</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Muhammad Hadzran Ardana</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Febri Riska Setyowati</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Raga Prasetyo</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Nabila</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Syarif bagus wicaksono</span
+                >
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium">Keyza Athalita</span>
+              </li>
+              <li class="flex items-center space-x-3 name-item">
+                <div
+                  class="w-2 h-2 rounded-full bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.6)]"
+                ></div>
+                <span class="text-slate-700 font-medium"
+                  >Athiya Intan Ashalina
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Silakan copy-paste blok Divisi di atas jika divisinya lebih banyak -->
+      </section>
+
+      <!-- Informasi Lanjutan (CTA) -->
+      <section
+        class="mt-8 bg-blue-50 border border-blue-200 rounded-2xl p-6 md:p-8 fade-in shadow-sm"
+        style="animation-delay: 0.4s"
+      >
+        <h2 class="text-xl font-bold text-blue-900 mb-3">
+          <i class="fa-solid fa-clipboard-check mr-2"></i>Langkah Selanjutnya
+        </h2>
+        <div class="text-blue-800 space-y-4">
+          <!-- PASTE INSTRUKSI SELANJUTNYA DARI CANVA DI SINI -->
+          <p>
+            Bagi teman-teman yang dinyatakan lolos, wajib untuk segera bergabung
+            ke grup koordinasi internal sebelum tanggal
+            <strong>29 September 2026 Pukul 18.00 WIB</strong>.
+          </p>
+          <a
+            href="https://wa.me/6289607670060"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            1. Sekretaris: 0896-0767-0060 (Eva)
+          </a>
+
+          <a
+            href="https://wa.me/6287834970835"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            2. Bendahara: 0878-3497-0835 (Jasmine)
+          </a>
+
+          <a
+            href="https://wa.me/6283178657183"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            3. Acara: 0831-7865-7183 (Rahmat)
+          </a>
+
+          <a
+            href="https://wa.me/6289502885961"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            4. Humas dan Perizinan: 0895-0288-5961 (Keysya)
+          </a>
+
+          <a
+            href="https://wa.me/6287732509655"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            5. Konsumsi: 0877-3250-9655 (Amala)
+          </a>
+
+          <a
+            href="https://wa.me/6288980304541"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            6. Sponsorship: 0889-8030-4541 (Annisa)
+          </a>
+
+          <a
+            href="https://wa.me/6288232732165"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            7. Perkap dan Dekorasi: 0882-3273-2165 (Ilham)
+          </a>
+
+          <a
+            href="https://wa.me/6288212648273"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            8. Keamanan: 0882-1264-8273 (Daffa)
+          </a>
+
+          <a
+            href="https://wa.me/62882000864042"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            9. Try Out: 0882-0008-64042 (Maylinda)
+          </a>
+
+          <a
+            href="https://wa.me/6281215192619"
+            class="inline-flex items-center px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5"
+          >
+            <i class="fa-brands fa-whatsapp mr-2 text-lg"></i>
+            10. Media dan Branding: 0812-1519-2619 (Refan)
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-8 text-center mt-auto">
+      <p class="text-sm">
+        &copy; 2027 Panitia BCF. <br class="md:hidden" />Designed for a better
+        UI/UX experience.
+      </p>
+    </footer>
+
+    <!-- Logika Interaktivitas -->
+    <script>
+      // 1. Fitur Pencarian Real-time
+      const searchInput = document.getElementById("searchInput");
+      searchInput.addEventListener("input", function (e) {
+        const term = e.target.value.toLowerCase();
+        const departments = document.querySelectorAll(".department-card");
+
+        departments.forEach((dept) => {
+          let hasMatch = false;
+          const deptName = dept
+            .querySelector(".department-name")
+            .innerText.toLowerCase();
+          const nameItems = dept.querySelectorAll(".name-item");
+
+          // Buka otomatis akordion saat mencari
+          const contentArea = dept.querySelector(".content-area");
+          const icon = dept.querySelector(".fa-chevron-down");
+
+          if (deptName.includes(term)) hasMatch = true;
+
+          nameItems.forEach((item) => {
+            const nameText = item.innerText.toLowerCase();
+            if (nameText.includes(term)) {
+              item.classList.remove("hidden");
+              hasMatch = true;
+            } else {
+              item.classList.add("hidden");
+            }
+          });
+
+          if (hasMatch || term === "") {
+            dept.classList.remove("hidden");
+            if (term !== "") {
+              contentArea.classList.remove("hidden");
+              icon.style.transform = "rotate(-180deg)";
+            }
+          } else {
+            dept.classList.add("hidden");
+          }
+
+          if (term === "") {
+            nameItems.forEach((item) => item.classList.remove("hidden"));
+            contentArea.classList.remove("hidden");
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+
+      // 2. Fitur Akordion (Buka/Tutup Divisi)
+      const toggles = document.querySelectorAll(".toggle-btn");
+      toggles.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          const content = btn.nextElementSibling;
+          const icon = btn.querySelector(".fa-chevron-down");
+
+          content.classList.toggle("hidden");
+          if (content.classList.contains("hidden")) {
+            icon.style.transform = "rotate(-90deg)";
+          } else {
+            icon.style.transform = "rotate(0deg)";
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
